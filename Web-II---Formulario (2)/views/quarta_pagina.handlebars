@@ -43,7 +43,6 @@
             <p class="text-start fs-6">Sistema Utilizado para agendamento de serviços.</p>
             <p>
                 {{#each posts}}
-                    {{#dataValues}}
                         <form action="/excluir" method="POST">
                         <input type="hidden" name="id" value="{{this.id}}">
                             <div class="mb-3 text-start">
@@ -73,8 +72,7 @@
                             <div class="mb-3 text-start">
                                 <button type="submit" class="btn btn-primary">Deseja Excluir?</button>
                             </div>
-                        </form>
-                    {{/dataValues}}        
+                        </form>     
                 {{/each}}
             </p>
         </div>
